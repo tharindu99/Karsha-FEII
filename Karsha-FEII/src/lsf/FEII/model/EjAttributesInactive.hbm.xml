@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 24, 2016 12:54:05 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="EjAttributesInactive" table="ej_attributes_inactive" catalog="feiii_db">
+        <composite-id name="id" class="EjAttributesInactiveId">
+            <key-property name="idRssd" type="string">
+                <column name="ID_RSSD" />
+            </key-property>
+            <key-property name="DDtStart" type="string">
+                <column name="D_DT_START" />
+            </key-property>
+        </composite-id>
+        <property name="DDtEnd" type="string">
+            <column name="D_DT_END" />
+        </property>
+        <property name="bhcInd" type="string">
+            <column name="BHC_IND" />
+        </property>
+        <property name="broadRegCd" type="string">
+            <column name="BROAD_REG_CD" />
+        </property>
+        <property name="chtrAuthCd" type="string">
+            <column name="CHTR_AUTH_CD" />
+        </property>
+        <property name="chtrTypeCd" type="string">
+            <column name="CHTR_TYPE_CD" />
+        </property>
+        <property name="fbo4c9Ind" type="string">
+            <column name="FBO_4C9_IND" />
+        </property>
+        <property name="fhcInd" type="string">
+            <column name="FHC_IND" />
+        </property>
+        <property name="funcReg" type="string">
+            <column name="FUNC_REG" />
+        </property>
+        <property name="insurPriCd" type="string">
+            <column name="INSUR_PRI_CD" />
+        </property>
+        <property name="mbrFhlbsInd" type="string">
+            <column name="MBR_FHLBS_IND" />
+        </property>
+        <property name="mbrFrsInd" type="string">
+            <column name="MBR_FRS_IND" />
+        </property>
+        <property name="secRptgStatus" type="string">
+            <column name="SEC_RPTG_STATUS" />
+        </property>
+        <property name="estTypeCd" type="string">
+            <column name="EST_TYPE_CD" />
+        </property>
+        <property name="bnkTypeAnalysCd" type="string">
+            <column name="BNK_TYPE_ANALYS_CD" />
+        </property>
+        <property name="DDtExistTerm" type="string">
+            <column name="D_DT_EXIST_TERM" />
+        </property>
+        <property name="fiscYrendMmdd" type="string">
+            <column name="FISC_YREND_MMDD" />
+        </property>
+        <property name="DDtInsur" type="string">
+            <column name="D_DT_INSUR" />
+        </property>
+        <property name="DDtOpen" type="string">
+            <column name="D_DT_OPEN" />
+        </property>
+        <property name="fnclSubHolder" type="string">
+            <column name="FNCL_SUB_HOLDER" />
+        </property>
+        <property name="fnclSubInd" type="string">
+            <column name="FNCL_SUB_IND" />
+        </property>
+        <property name="ibaGrndfthrInd" type="string">
+            <column name="IBA_GRNDFTHR_IND" />
+        </property>
+        <property name="ibfInd" type="string">
+            <column name="IBF_IND" />
+        </property>
+        <property name="idRssdHdOff" type="string">
+            <column name="ID_RSSD_HD_OFF" />
+        </property>
+        <property name="mjrOwnMnrty" type="string">
+            <column name="MJR_OWN_MNRTY" />
+        </property>
+        <property name="nmLgl" type="string">
+            <column name="NM_LGL" />
+        </property>
+        <property name="nmShort" type="string">
+            <column name="NM_SHORT" />
+        </property>
+        <property name="nmSrchCd" type="string">
+            <column name="NM_SRCH_CD" />
+        </property>
+        <property name="orgTypeCd" type="string">
+            <column name="ORG_TYPE_CD" />
+        </property>
+        <property name="reasonTermCd" type="string">
+            <column name="REASON_TERM_CD" />
+        </property>
+        <property name="cnsrvtrCd" type="string">
+            <column name="CNSRVTR_CD" />
+        </property>
+        <property name="entityType" type="string">
+            <column name="ENTITY_TYPE" />
+        </property>
+        <property name="authRegDistFrs" type="string">
+            <column name="AUTH_REG_DIST_FRS" />
+        </property>
+        <property name="actPrimCd" type="string">
+            <column name="ACT_PRIM_CD" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" />
+        </property>
+        <property name="cntryNm" type="string">
+            <column name="CNTRY_NM" />
+        </property>
+        <property name="idCusip" type="string">
+            <column name="ID_CUSIP" />
+        </property>
+        <property name="stateAbbrNm" type="string">
+            <column name="STATE_ABBR_NM" />
+        </property>
+        <property name="placeCd" type="string">
+            <column name="PLACE_CD" />
+        </property>
+        <property name="stateCd" type="string">
+            <column name="STATE_CD" />
+        </property>
+        <property name="stateHomeCd" type="string">
+            <column name="STATE_HOME_CD" />
+        </property>
+        <property name="streetLine1" type="string">
+            <column name="STREET_LINE1" />
+        </property>
+        <property name="streetLine2" type="string">
+            <column name="STREET_LINE2" />
+        </property>
+        <property name="zipCd" type="string">
+            <column name="ZIP_CD" />
+        </property>
+        <property name="idThrift" type="string">
+            <column name="ID_THRIFT" />
+        </property>
+        <property name="idThriftHc" type="string">
+            <column name="ID_THRIFT_HC" />
+        </property>
+        <property name="domesticInd" type="string">
+            <column name="DOMESTIC_IND" />
+        </property>
+        <property name="idAbaPrim" type="string">
+            <column name="ID_ABA_PRIM" />
+        </property>
+        <property name="idFdicCert" type="string">
+            <column name="ID_FDIC_CERT" />
+        </property>
+        <property name="idNcua" type="string">
+            <column name="ID_NCUA" />
+        </property>
+        <property name="countyCd" type="string">
+            <column name="COUNTY_CD" />
+        </property>
+        <property name="distFrs" type="string">
+            <column name="DIST_FRS" />
+        </property>
+        <property name="idOcc" type="string">
+            <column name="ID_OCC" />
+        </property>
+        <property name="cntryCd" type="string">
+            <column name="CNTRY_CD" />
+        </property>
+        <property name="dtEnd" type="string">
+            <column name="DT_END" />
+        </property>
+        <property name="dtExistCmnc" type="string">
+            <column name="DT_EXIST_CMNC" />
+        </property>
+        <property name="dtExistTerm" type="string">
+            <column name="DT_EXIST_TERM" />
+        </property>
+        <property name="dtInsur" type="string">
+            <column name="DT_INSUR" />
+        </property>
+        <property name="dtOpen" type="string">
+            <column name="DT_OPEN" />
+        </property>
+        <property name="dtStart" type="string">
+            <column name="DT_START" />
+        </property>
+        <property name="idTax" type="string">
+            <column name="ID_TAX" />
+        </property>
+        <property name="provRegion" type="string">
+            <column name="PROV_REGION" />
+        </property>
+        <property name="url" type="string">
+            <column name="URL" />
+        </property>
+        <property name="slhcInd" type="string">
+            <column name="SLHC_IND" />
+        </property>
+        <property name="slhcTypeInd" type="string">
+            <column name="SLHC_TYPE_IND" />
+        </property>
+        <property name="primFedReg" type="string">
+            <column name="PRIM_FED_REG" />
+        </property>
+        <property name="stateIncCd" type="string">
+            <column name="STATE_INC_CD" />
+        </property>
+        <property name="cntryIncCd" type="string">
+            <column name="CNTRY_INC_CD" />
+        </property>
+        <property name="stateIncAbbrNm" type="string">
+            <column name="STATE_INC_ABBR_NM" />
+        </property>
+        <property name="cntryIncNm" type="string">
+            <column name="CNTRY_INC_NM" />
+        </property>
+        <property name="DDtExistCmnc" type="string">
+            <column name="D_DT_EXIST_CMNC" />
+        </property>
+    </class>
+</hibernate-mapping>

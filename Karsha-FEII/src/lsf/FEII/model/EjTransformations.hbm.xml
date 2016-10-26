@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 24, 2016 12:54:05 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="EjTransformations" table="ej_transformations" catalog="feiii_db">
+        <composite-id name="id" class="EjTransformationsId">
+            <key-property name="idRssdPredecessor" type="string">
+                <column name="ID_RSSD_PREDECESSOR" />
+            </key-property>
+            <key-property name="idRssdSuccessor" type="string">
+                <column name="ID_RSSD_SUCCESSOR" />
+            </key-property>
+            <key-property name="DDtTrans" type="string">
+                <column name="D_DT_TRANS" />
+            </key-property>
+        </composite-id>
+        <property name="trnsfmCd" type="string">
+            <column name="TRNSFM_CD" />
+        </property>
+        <property name="acctMethod" type="string">
+            <column name="ACCT_METHOD" />
+        </property>
+        <property name="dtTrans" type="string">
+            <column name="DT_TRANS" />
+        </property>
+    </class>
+</hibernate-mapping>

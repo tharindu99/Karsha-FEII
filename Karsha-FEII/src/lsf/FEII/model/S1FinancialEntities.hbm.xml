@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 24, 2016 12:54:05 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="S1FinancialEntities" table=" s1_financial_entities" catalog="feiii_db">
+        <id name="rssid" type="int">
+            <column name="RSSID" />
+            <generator class="assigned" />
+        </id>
+        <property name="rank" type="java.lang.Integer">
+            <column name="Rank" />
+        </property>
+        <property name="institutionName" type="string">
+            <column name="InstitutionName" />
+        </property>
+        <property name="location" type="string">
+            <column name="Location" />
+        </property>
+        <property name="totalAssets" type="string">
+            <column name="TotalAssets" />
+        </property>
+    </class>
+</hibernate-mapping>

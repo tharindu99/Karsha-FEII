@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 24, 2016 12:54:05 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="EjRelationships" table="ej_relationships" catalog="feiii_db">
+        <composite-id name="id" class="EjRelationshipsId">
+            <key-property name="idRssdParent" type="string">
+                <column name="ID_RSSD_PARENT" />
+            </key-property>
+            <key-property name="idRssdOffspring" type="string">
+                <column name="ID_RSSD_OFFSPRING" />
+            </key-property>
+            <key-property name="DDtStart" type="string">
+                <column name="D_DT_START" />
+            </key-property>
+            <key-property name="relnLvl" type="string">
+                <column name="RELN_LVL" />
+            </key-property>
+        </composite-id>
+        <property name="ctrlInd" type="string">
+            <column name="CTRL_IND" />
+        </property>
+        <property name="DDtRelnEst" type="string">
+            <column name="D_DT_RELN_EST" />
+        </property>
+        <property name="equityInd" type="string">
+            <column name="EQUITY_IND" />
+        </property>
+        <property name="otherBasisInd" type="string">
+            <column name="OTHER_BASIS_IND" />
+        </property>
+        <property name="pctEquity" type="string">
+            <column name="PCT_EQUITY" />
+        </property>
+        <property name="pctOther" type="string">
+            <column name="PCT_OTHER" />
+        </property>
+        <property name="reasonRowCrtd" type="string">
+            <column name="REASON_ROW_CRTD" />
+        </property>
+        <property name="reasonTermReln" type="string">
+            <column name="REASON_TERM_RELN" />
+        </property>
+        <property name="regInd" type="string">
+            <column name="REG_IND" />
+        </property>
+        <property name="pctEquityBracket" type="string">
+            <column name="PCT_EQUITY_BRACKET" />
+        </property>
+        <property name="pctEquityFormat" type="string">
+            <column name="PCT_EQUITY_FORMAT" />
+        </property>
+        <property name="DDtEnd" type="string">
+            <column name="D_DT_END" />
+        </property>
+        <property name="mbCost" type="string">
+            <column name="MB_COST" />
+        </property>
+        <property name="fcInd" type="string">
+            <column name="FC_IND" />
+        </property>
+        <property name="regkInv" type="string">
+            <column name="REGK_INV" />
+        </property>
+        <property name="dtEnd" type="string">
+            <column name="DT_END" />
+        </property>
+        <property name="dtRelnEst" type="string">
+            <column name="DT_RELN_EST" />
+        </property>
+        <property name="dtStart" type="string">
+            <column name="DT_START" />
+        </property>
+    </class>
+</hibernate-mapping>
